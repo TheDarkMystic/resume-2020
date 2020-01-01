@@ -1,0 +1,158 @@
+%-------------------------
+% Resume in Latex
+% Author : Jay Kadam
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Jay Kadam} & Email : \href{mailto:er.jayk@gmail.com}{er.jayk@gmail.com}\\
+   & Mobile : +91 838-104-3656 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Pilani, India}
+      {M.E. Software Systems;  CGPA: 8.08/10.00 }{Aug. 2016 -- July. 2018}
+      \resumeSubheading
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Computer Engineering;  Overall Percentage: 67.5}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oracle India}{Hyderabad, India}
+      {Application Engineer}{July 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Invoices Microservice}
+      { Joined the Invoices Microservices team right      since the inception of the project. The goal of   the project is to design,         develop and     deploy Invoices Application using Microservices   architecture. 
+        Currently, I am responsible for analysing existing monolith Invoices application, identifying various dependencies among different components, conducting various P.O.C.s and developing new back-end for Invoices Microservice using Oracle ADF, Helidon, Java, Groovy and Oracle SQL.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Samsung Research India Bangalore}{Bangalore, India}
+      {Student Trainee}{Jan 2018 - Jun 2018}
+      \resumeItemListStart
+        \resumeItem{Automatic Speech Recognition}
+          { Worked on implementation of Automatic Speech Recognition using Deep Neural Networks (CNN, RNN etc) with  SRIB Deep Natural     Language Understanding Team. Goal of the project was to generate phonemes given audio/sound/voice files as input without intermediate steps. The existing   ASR system generated text from input audio files with multiple intermediate steps such as phoneme and character generation,   language modeling, sentence formation (not necessarily in mentioned order).}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Pilani, India}
+      {Research/Teaching Assistant}{Aug 2016 - Jun 2017}
+      \resumeItemListStart
+        \resumeItem{Teaching Assistant - Data Mining}
+          {Handled responsibility for conducting lab sessions as main instructor of Data Mining course with batch      strength of ~60 students.Mentored students, helped them to understand and implement complex      data mining concepts. Explained practical aspects of Data Mining using tools such as IBM SPSS     Modeler, WEKA, R.
+            Helped Course In-Charge to design and create lab manuals, question papers to assess the understanding of students.}
+        \resumeItem{Teaching Assistant - Data Wareshousing}
+          {Helped Course In-Charge to design  Create lab manuals, question papers which can assess the understanding of students.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Infosys ltd.}{Pune, India}
+      {Senior Systems Engineer}{Jun 2013 - Jul 2016}
+      \resumeItemListStart
+        \resumeItem{Syngenta AG}
+          { Handled responsibilities as a SAP BI(Data Wareshousing) Consultant for Syngenta AG.
+            Developed and designed reports using SAP BI/BW.
+            Lead a team of 3 members for SAP BW Platform Optimization.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Inverted Index and distributed Search query for Wikipedia data set }
+      {Built an Inverted Index using Apache Spark and Python.
+Set up an Apache Spark Cluster of 3 machines running Ubuntu 16.04 and setup Apache Spark, Python 3.0 distributed environment.
+Built an Inverted Index and distributed search query to retrieve information from Wikipedia Data set of size ~3GB.}
+    
+    \resumeSubItem{Spam Classifier Web Application }
+      {Built a machine learning model for spam SMS message classification, then created an API for the model, using Flask, the Python micro framework for building web applications.This API allows us to utilize the predictive capabilities through HTTP requests.}
+    \resumeSubItem{Multi-Client chat application }
+      {Designed and developed an UDP based application using which multiple clients can chat with each other over a computer network. Implemented using multi-threading in Java and Swing for UI.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages }{Java, SQL, Shell Script, Python, Scala}
+    \resumeSubItem{Technologies/ Tools }{Git, Jira, Linux, Kafka, Spark, Hadoop Mapreduce, Jupyter Notebooks, Keras, Tensorflow}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
